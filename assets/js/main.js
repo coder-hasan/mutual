@@ -108,32 +108,6 @@
     //    Blog-page Slider  ==========*/
 
 
-    $('.photo-gallery').owlCarousel({
-        smartSpeed: 1500,
-        loop: true,
-        autoplay: false,
-        dots: false,
-        nav: true,
-        margin: 15,
-        navText: ['<i class="fas fa-chevron-right"></i>', '<i class="fas fa-chevron-left"></i>'],
-        responsive: {
-            0: {
-                items: 1,
-
-            },
-            600: {
-                items: 1,
-            },
-            768: {
-                items: 2,
-            },
-            1000: {
-                items: 3,
-            }
-        }
-    });
-
-
     // ======== all-client  slider
 
     $('.service-active').owlCarousel({

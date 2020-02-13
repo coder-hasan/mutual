@@ -437,7 +437,8 @@ button:active {
     z-index: -1;
 }
 
-.about-heading {
+.about-heading,
+.page-area-content {
     margin: 0 50px;
 }
 
@@ -455,7 +456,8 @@ button:active {
 }
 
 .about-area.normal ol{
-    padding: 0;
+    padding: 20px 0 0 20px;
+    color: #5b5b5b;
 }
 
 .video-area {
@@ -595,7 +597,7 @@ button:active {
 }
 
 .contact-area {
-    background: url(../img/bg/footer-bg.jpg);
+    background: url(../img/garments/bg.jpg);
 
 }
 
@@ -607,12 +609,51 @@ button:active {
     background: url(../img/garments/board.jpg);
 }
 
+.page-area.merchand {
+    background: url(../img/garments/merchandising.jpg) center;
+}
+
 .page-area.normal {
     background: url(../img/garments/normal.jpg);
 }
 
 .page-area.pigment{
     background: url(../img/garments/pigment.jpg);
+}
+
+.page-area.bleach {
+    background: url(../img/garments/bleach.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.page-area.stone {
+    background: url(../img/garments/stone.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.page-area.acid {
+    background: url(../img/garments/acid.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.page-area.enzyme {
+    background: url(../img/garments/enzyme.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.page-area.caustic {
+    background: url(../img/garments/caustic.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.page-area.garments {
+    background: url(../img/garments/garments.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.page-area.whitening {
+    background: url(../img/garments/whitening.jpg) no-repeat center;
+    background-size: cover;
 }
 
 .subscribe-area,
