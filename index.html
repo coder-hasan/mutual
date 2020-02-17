@@ -45,7 +45,7 @@
                         <ul id="main-menu" class="sm sm-clean">
                             <li class="active"><a href="index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
-                            <li><a href="#">Our Industries</a>
+                            <li><a href="#">Industries</a>
                                 <ul>
                                     <li><a href="">Woven</a></li>
                                     <li><a href="">Sweater</a></li>
@@ -68,6 +68,7 @@
                                     <li><a href="">Ancillary</a></li>
                                 </ul>
                             </li>
+                            <li><a href="product.html">Product</a></li>
                             <li><a href="merchandising.html">Merchandising</a></li>
                             <li><a href="boardmembers.html">Board Members</a></li>
                             <li><a href="contact.html">Contact</a></li>
@@ -268,6 +269,99 @@
         </div>
     </section>
     <!-- ============= Subscribe Area End =========== -->
+
+    <!-- portfolio area start -->
+    <section class="portfolio-area section-padding">
+        <div class="container" id="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3 text-center">
+                    <div class="section-heading">
+                        <h2 class="wow fadeInDown">Our Products</h2>
+                        <p class="wow fadeInUp"> You can find lists of ingredients we have included in each of our products.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row wow fadeInDown">
+                    <!-- <div class="col-md-3">
+                        <div class="product">
+                            <div class="productItem">
+                                <img src="assets/img/products/pr1.jpg" alt="">
+                                <div class="productItemBorder"></div>
+                                <div class="productItemInfo">
+                                    <button>SHOP NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                <div class="col-md-3 wow fadeInLeft">
+                    <div class="productcategory">
+                        <img src="assets/img/products/jeans.jpeg" alt="">
+                        <a href="#">
+                            <figcaption>
+                                <div class="categoryText">
+                                    <span>Jeans</span>
+                                    <p>Jeans are a type of pants or trousers, typically made from denim</p>
+                                </div>
+                            </figcaption>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 wow fadeInRight">
+                    <div class="productcategory">
+                        <img src="assets/img/products/jacket.jpg" alt="">
+                        <a href="#">
+                            <figcaption>
+                                <div class="categoryText">
+                                    <span>Jacket</span>
+                                    <p>A jacket is a mid-stomach–length garment for the upper body.</p>
+                                </div>
+                            </figcaption>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 wow fadeInLeft">
+                    <div class="productcategory">
+                        <img src="assets/img/products/polo.jpg" alt="">
+                        <a href="#">
+                            <figcaption>
+                                <div class="categoryText">
+                                    <span>Polo T-Shirt</span>
+                                    <p>A polo shirt is a form of shirt with a collar, a placket neckline with three buttons, and an optional pocket.</p>
+                                </div>
+                            </figcaption>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 wow fadeInRight">
+                    <div class="productcategory">
+                        <img src="assets/img/products/shirt.jpg" alt="">
+                        <a href="#">
+                            <figcaption>
+                                <div class="categoryText">
+                                    <span>Shirt</span>
+                                    <p>A shirt is a cloth garment for the upper body Originally an undergarment worn exclusively by men</p>
+                                </div>
+                            </figcaption>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 wow fadeInLeft">
+                    <div class="productcategory">
+                        <img src="assets/img/products/t-shirt.jpg" alt="">
+                        <a href="#">
+                            <figcaption>
+                                <div class="categoryText">
+                                    <span>T-Shirt</span>
+                                    <p>A T-shirt is a style of fabric shirt named after the T shape of its body and sleeves.</p>
+                                </div>
+                            </figcaption>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- project area end -->
     
     <!-- ============= Happy Clients Area Start =========== -->
     <section class="clients-area section-padding">
@@ -460,8 +554,57 @@
     <script src="assets/js/fancybox.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
     <script src="assets/js/smartmenus.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script>
+        //isotop filtering
+        $('#container').imagesLoaded(function() {
+            $('.filter-button-group').on('click', 'li', function() {
+                var filterValue = $(this).attr('data-filter');
+                $grid.isotope({
+                    filter: filterValue
+                });
+            });
+            var $grid = $('.grid').isotope({
+                itemSelector: '.grid-item',
+                percentPosition: true,
+                masonry: {
+                    // use outer width of grid-sizer for columnWidth
+                    columnWidth: 1
+                }
+            })
+        });
+
+        // filtering li active
+        $('.filter-btn').on("click", function() {
+            if ($(this).hasClass('active-btn')) {
+                $(this).removeClass('active-btn');
+            } else {
+                $(this).addClass('active-btn');
+                $(this).siblings().removeClass('active-btn');
+            }
+        });
+
+        $('#container-about').imagesLoaded(function() {
+            $('.filter-button-group').on('click', 'li', function() {
+                var filterValue = $(this).attr('data-filter');
+                $grid.isotope({
+                    filter: filterValue
+                });
+            });
+            var $grid = $('.grid').isotope({
+                itemSelector: '.grid-item',
+                percentPosition: true,
+                masonry: {
+                    // use outer width of grid-sizer for columnWidth
+                    columnWidth: 1
+                }
+            })
+        });
+
+    </script>
 </body>
 
 </html>
