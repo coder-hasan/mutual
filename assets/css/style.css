@@ -661,6 +661,31 @@ button:active {
     background-size: cover;
 }
 
+.page-area.accessories {
+    background: url(../img/garments/accesoriesbg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.page-area.ancillary {
+    background: url(../img/garments/Ancillarybg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.page-area.denim {
+    background: url(../img/garments/denimbg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.page-area.design {
+    background: url(../img/garments/designbg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.page-area.sweater {
+    background: url(../img/garments/sweaterbg.jpg) no-repeat center;
+    background-size: cover;
+}
+
 .subscribe-area,
 .contact-area,
 .page-area {
