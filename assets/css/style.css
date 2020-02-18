@@ -686,6 +686,11 @@ button:active {
     background-size: cover;
 }
 
+.page-area.woven {
+    background: url(../img/garments/wovenbg.jpg) no-repeat center;
+    background-size: cover;
+}
+
 .subscribe-area,
 .contact-area,
 .page-area {
